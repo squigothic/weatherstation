@@ -3,6 +3,10 @@ import cityDataService from './services/citydata'
 import Display from './components/Display'
 import DisplayHistory from './components/DisplayHistory'
 
+// TO DO 
+// move formatCityData and getCityData to own module
+// implement dotenv for API key
+// make saved city names clickable
 
 const App = () => {
 
