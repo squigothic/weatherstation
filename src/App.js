@@ -3,11 +3,6 @@ import cityDataService from './services/citydata'
 import Display from './components/Display'
 import DisplayHistory from './components/DisplayHistory'
 
-// TO DO 
-// move formatCityData and getCityData to own module
-// implement dotenv for API key
-// make saved city names clickable
-
 const App = () => {
 
   const [targetCity, setTargetCity] = useState("select city...")
@@ -44,12 +39,7 @@ const App = () => {
     }
   }
 
-  const handleCityNameClick = (city) => {
-    return () => {  
-      console.log('yritetään asettaa tilaan ', city)
-      setCurrentData(city)
-    }
-  }
+  const handleCityNameClick = (city) => () =>  setCurrentData(city)
     
 
 
