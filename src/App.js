@@ -13,7 +13,6 @@ const App = () => {
     event.preventDefault()
     try {
       const city = await cityDataService.getData(targetCity)
-      console.log('raakadata: ', city)
       setCurrentData(formatCityData(city))
     } catch (error) {
       console.log(error)
