@@ -44,6 +44,15 @@ const App = () => {
     }
   }
 
+  const handleCityNameClick = (city) => {
+    return () => {  
+      console.log('yritetään asettaa tilaan ', city)
+      setCurrentData(city)
+    }
+  }
+    
+
+
   const handleInputChange = (event) => {
     setTargetCity(event.target.value)
   }
@@ -76,7 +85,10 @@ const App = () => {
       }
       {Object.keys(savedCities).length > 0 &&
         <div>
-          <DisplayHistory savedCities={savedCities} />
+          <DisplayHistory 
+            savedCities={savedCities} 
+            handleCityNameClick={handleCityNameClick}
+          />
         </div>
       }
       

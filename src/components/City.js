@@ -1,8 +1,8 @@
 import React from 'react'
 
-const City = ({ city }) => {
+const City = ({ city, handleCityNameClick }) => {
     return (
-        <li>{ city.name }</li>
+        <li onClick={handleCityNameClick(city)}>{ city.name }</li>
     )
 }
 
