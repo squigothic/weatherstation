@@ -1,6 +1,6 @@
 import React from 'react'
 import 'jest-dom/extend-expect'
-import { render, cleanup, testHook } from 'react-testing-library'
+import { render, cleanup } from 'react-testing-library'
 import DisplayHistory from './DisplayHistory'
 
 afterEach(cleanup)

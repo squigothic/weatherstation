@@ -1,10 +1,9 @@
 import axios from 'axios'
 //import { async } from 'q'
 const baseUrl = "http://api.openweathermap.org/data/2.5/weather?q="
-const apiKey = INSERT_API_KEY_HERE
+const apiKey = INSERT_API_KEY
 
 const getData = async (city) => {
-    //console.log('tehdään pyyntöä osoitteeseen: ', `${baseUrl}${city}&APPID=${apiKey}`)
     try {
       return await axios
         .get(`${baseUrl}${city}&units=metric&APPID=${apiKey}`)
