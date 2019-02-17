@@ -11,7 +11,7 @@ const DisplayHistory = ({ savedCities, handleCityNameClick }) => {
     )
     return (
         <div>
-            <h3>Previously seached cities</h3>
+            <h3>Previously searched cities</h3>
             <p>click to show weather</p>
             <ul>
                 {rows()}
